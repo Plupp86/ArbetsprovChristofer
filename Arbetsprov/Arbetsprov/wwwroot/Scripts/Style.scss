@@ -1,6 +1,41 @@
 ﻿$primary-bg: gray;
+$secondary-bg: silver;
+$border: black;
 
+html {
+	height:100%;
+}
 
 body {
 	background-color: $primary-bg;
+	height:100%;
+}
+
+div.display {
+	background-color: $secondary-bg;
+	border: 2px solid $border;
+	padding:5px;
+	border-radius:5px;
+}
+
+div#left {
+	float: left;
+	display: block;
+	width: 20%;
+	margin-left: 1%;
+
+}
+
+div#center {
+	float: left;
+	display: block;
+	width: 20%;
+	margin-left: 1%;
+}
+
+div#right {
+	float: left;
+	display: block;
+	width: 40%;
+	margin-left: 1%;
 }

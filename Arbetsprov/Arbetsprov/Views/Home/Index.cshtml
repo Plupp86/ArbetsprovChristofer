@@ -1,2 +1,19 @@
 ﻿@model IndexVM
 
+
+<div id="left" class="display">
+	<div id="search">
+		<h3>Search for your favourite character from A Song of Ice and Fire</h3>
+		<input type="text" placeholder="Character Name" id="searchString" />
+		<input type="button" value="Search" id="searchBtn" onclick="getListOfCharacters()">
+	</div>
+</div>
+
+<div id="center" class="display">
+	<p>Search results:</p>
+	<ul id="listOfCharacters"></ul>
+</div>
+
+<div id="right" class="display">
+	<p>Character information</p>
+</div>
