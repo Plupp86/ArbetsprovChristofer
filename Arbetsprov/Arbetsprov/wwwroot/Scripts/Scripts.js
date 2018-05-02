@@ -36,16 +36,9 @@ function loadCharacterInfo(characterId) {
 			}
 
 			$('#born').html(result.born);
-			if (result.died !== "") {
-				$('#died').html(result.died);
-			}
-
-			if (result.playedBy[0] !== "") {
-				$('#actor').html(result.playedBy[0]);
-			}
-
+			$('#died').html(result.died);
+			$('#actor').html(result.playedBy[0]);
 			$('#url').html('<a href="' + result.url + '">' + result.url + '</a>');
-
 		}
 	});
 }
