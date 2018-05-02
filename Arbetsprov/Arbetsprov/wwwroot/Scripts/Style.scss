@@ -2,6 +2,10 @@
 $secondary-bg: silver;
 $border: black;
 
+a {
+	color:black;
+}
+
 html {
 	height:100%;
 }
@@ -39,3 +43,12 @@ div#right {
 	width: 40%;
 	margin-left: 1%;
 }
+
+.searchResult {
+	cursor: pointer;
+}
+
+.characterAttribute {
+	font-weight:bold;
+}
+

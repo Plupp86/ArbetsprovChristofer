@@ -1,4 +1,7 @@
-﻿html {
+﻿a {
+  color: black; }
+
+html {
   height: 100%; }
 
 body {
@@ -28,3 +31,9 @@ div#right {
   display: block;
   width: 40%;
   margin-left: 1%; }
+
+.searchResult {
+  cursor: pointer; }
+
+.characterAttribute {
+  font-weight: bold; }
