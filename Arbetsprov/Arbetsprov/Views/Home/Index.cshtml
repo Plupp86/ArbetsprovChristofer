@@ -1,22 +1,29 @@
 ﻿@model IndexVM
 
+<div id="top"><h3>Game of Thrones Search Engine</h3></div>
 
 <div id="left" class="display">
 	<div id="search">
-		<h3>Search for your favourite character from A Song of Ice and Fire</h3>
+		<h3>Search here:</h3>
 		<input type="text" placeholder="Character Name" id="searchString" />
 		<input type="button" value="Search" id="searchBtn" onclick="getListOfCharacters()">
 	</div>
 </div>
 
 <div id="center" class="display">
-	<p>Search results:</p>
+	<h4>Search Results:</h4>
 	<ul id="listOfCharacters"></ul>
 </div>
 
 <div id="right" class="display">
-	<p>Character information</p>
+	<h4>Character Information</h4>
 	<div id="characterInfo"></div>
+</div>
+
+<div class="clearFix"></div>
+
+<div id="footer">
+	<p>This search engine is using the free API <a href="https://anapioficeandfire.com/">An API of Ice And Fire</a>.</p>
 </div>
 
 <script>

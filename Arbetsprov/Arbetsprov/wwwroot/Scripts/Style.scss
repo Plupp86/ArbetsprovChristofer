@@ -2,31 +2,36 @@
 $secondary-bg: silver;
 $border: black;
 
-a {
-	color:black;
-}
+
 
 html {
-	height:100%;
+	height:99%;
+	margin:0;
 }
 
 body {
 	background-color: $primary-bg;
-	height:100%;
+	height:99%;
+	margin:0;
+}
+
+a {
+	color: black;
 }
 
 div.display {
+	margin:1%;
 	background-color: $secondary-bg;
 	border: 2px solid $border;
 	padding:5px;
 	border-radius:5px;
+	margin-bottom:40px;
 }
 
 div#left {
 	float: left;
 	display: block;
 	width: 20%;
-	margin-left: 1%;
 
 }
 
@@ -34,14 +39,33 @@ div#center {
 	float: left;
 	display: block;
 	width: 20%;
-	margin-left: 1%;
 }
 
 div#right {
 	float: left;
 	display: block;
 	width: 40%;
-	margin-left: 1%;
+}
+
+div#top {
+	margin:1%;
+	text-align:center;
+}
+
+div#footer {
+		position: fixed;
+		background-color:$primary-bg;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 30px;
+		z-index: 5;
+		text-align:right;
+}
+
+.clearFix{
+	clear: both;
 }
 
 .searchResult {
@@ -50,5 +74,10 @@ div#right {
 
 .characterAttribute {
 	font-weight:bold;
+}
+
+#searchBtn {
+	background-color: $primary-bg;
+	color: black;
 }
 
